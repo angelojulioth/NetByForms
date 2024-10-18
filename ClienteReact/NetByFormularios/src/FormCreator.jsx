@@ -229,13 +229,13 @@ const FormCreator = () => {
         {(currentField.type === "select" ||
           currentField.type === "multiselect") && (
           <div className="form-group options-container">
-            <label className="form-label">Options</label>
+            <label className="form-label">Opciones</label>
             {currentField.options.map((option, index) => (
               <input
                 key={index}
                 value={option}
                 onChange={(e) => handleOptionChange(index, e.target.value)}
-                placeholder={`Option ${index + 1}`}
+                placeholder={`Opción ${index + 1}`}
                 className="form-input"
               />
             ))}
@@ -359,7 +359,7 @@ const FormCreator = () => {
                     name: e.target.value,
                   })
                 }
-                placeholder="Enter nested form name"
+                placeholder="Ingresa un nombre para formulario anidado"
                 className="form-input"
               />
             </div>
