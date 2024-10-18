@@ -8,7 +8,7 @@ La carpeta APIFormularios contiene la solución y el proyecto de la API Web
 
 ## Cliente React
 
-El cliente react usa vite como builder, se usa el archivo .env para establecer la url que compone
+El cliente react usa vite como builder, se usa el archivo `.env` para establecer la url que compone
 los endpoints que escuchan del lado del servicio, cambiar la configuración VITE_API_BASE_URL=https://localhost:7144
 según sea necesario
 
@@ -18,8 +18,12 @@ Contiene imágenes del funcionamiento de la aplicación desde el cliente react
 
 ## Base de datos
 
+Usar SQL Server
+
 El archivo `MigracionesSQL.sql` contiene el script inicial para poblar la base de datos y crear los stored
 procedures.
+
+Deben estar ingresados todos los stored procedures para que funcione correctamente la capa de servicio del API
 
 ### Advertencia
 
@@ -35,6 +39,9 @@ la cadena de conexión a la base de datos.
 
 La clave es `ConnectionStrings` y es pertinente a nuestro entorno, o en el que se corra el motor de SQL Server, que
 se coloque de manera correcta el valor de la cadena de conexión de la clave `DefaultConnection`.
+
+Tomar en consideración que en la cadena de conexión que se encuentra subida se usa un id y un password
+de un usuario local agregado como login a la instancia de sql server, esto se debe cambiar según corresponda.
 
 # Capturas funcionalidad
 
