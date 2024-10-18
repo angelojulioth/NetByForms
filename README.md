@@ -35,3 +35,23 @@ la cadena de conexión a la base de datos.
 
 La clave es `ConnectionStrings` y es pertinente a nuestro entorno, o en el que se corra el motor de SQL Server, que
 se coloque de manera correcta el valor de la cadena de conexión de la clave `DefaultConnection`.
+
+# Capturas funcionalidad
+
+![Form Login](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/login.png?raw=true)
+![Form Login password ver campo](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/login-passwordsee.png?raw=true)
+![Form Login password incorrecto](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/login-fail.png?raw=true)
+![Form Creación 1](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-crear.png?raw=true)
+![Form Creación 2](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-test1.png?raw=true)
+![Form Creación 3](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-test2.png?raw=true)
+![Form Creación 4](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-test3.png?raw=true)
+![Form Enviado](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/form-enviado.png?raw=true)
+![Form Guardado](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/form-guardado.png?raw=true)
+![Form Enviar](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/form-ver-enviar.png?raw=true)
+![Form Borrado](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-borrado.png?raw=true)
+![Form Ingreso Requeridos](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/form-ingreso-requeridos.png?raw=true)
+![Form Lista de plantillas de formularios](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-lista.png?raw=true)
+![Form Ver detalles de ingresos al formulario](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-verregistros.png?raw=true)
+![Form Ingresos](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-final1.png?raw=true)
+![Form Detalles de un formulario ingresado](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-final2.png?raw=true)
+![Form Visualización de un formulario ingresado](https://github.com/angelojulioth/NetByForms/blob/main/ImagenesFuncionalidad/forms-final3.png?raw=true)
