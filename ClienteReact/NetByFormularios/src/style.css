@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --secondary-color: #10b981;
+  --secondary-hover: #059669;
+  --danger-color: #ef4444;
+  --danger-hover: #dc2626;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --background-color: #ffffff;
+  --background-light: #f3f4f6;
+  --border-color: #e5e7eb;
+  --focus-color: #93c5fd;
+
+  --error-color: #ef4444;
+  --success-color: #10b981;
+
+  --gradiente-1: #6366f1;
+  --gradiente-2: #8b5cf6;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    var(--gradiente-1),
+    var(--gradiente-2),
+    var(--gradiente-1),
+    var(--gradiente-2)
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,225 @@
+.form-creator {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+}
+
+.form-creator h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-creator h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.form-creator h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.sidebar {
+  width: 300px;
+  height: fit-content;
+  background-color: var(--background-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  position: sticky;
+  top: 1rem;
+}
+
+.sidebar .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar .form-button {
+  width: 100%;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--focus-color);
+  box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.3);
+}
+
+.form-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.form-button {
+  display: inline-block;
+  margin: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.form-button.secondary {
+  background-color: var(--secondary-color);
+}
+
+.form-button.secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.form-button.danger {
+  background-color: var(--danger-color);
+}
+
+.form-button.danger:hover {
+  background-color: var(--danger-hover);
+}
+
+.preview-field {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-field-info {
+  flex-grow: 1;
+}
+
+.preview-field-label {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.preview-field-type,
+.preview-field-name,
+.preview-field-required {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.options-container {
+  margin-top: 1rem;
+}
+
+.nested-forms {
+  margin-top: 2rem;
+}
+
+.nested-form-preview {
+  background-color: var(--background-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nested-form-creator {
+  background-color: var(--background-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nested-form-fields {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nested-form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .form-creator {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .sidebar {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .field-creator {
+    padding: 1rem;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+  .nested-form-actions {
+    flex-direction: column;
+  }
+
+  .nested-form-actions .form-button {
+    margin-bottom: 0.5rem;
+  }
+}
