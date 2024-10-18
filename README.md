@@ -10,7 +10,9 @@ La carpeta APIFormularios contiene la solución y el proyecto de la API Web
 
 El cliente react usa vite como builder, se usa el archivo `.env` para establecer la url que compone
 los endpoints que escuchan del lado del servicio, cambiar la configuración VITE_API_BASE_URL=https://localhost:7144
-según sea necesario
+según sea necesario.
+
+Esto es un requisito para no tener la cadena del url quemada en todos los archivos/componentes que hagan request al servicio.
 
 ## Imágenes de Funcionalidad
 
